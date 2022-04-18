@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat' , sans-serif;
+    overflow-x: hidden ;
+}
+
+/*Menu*/
+#menu a {
+    font-size: 18px;
+    font-weight:bold;
+    color: #3f3f3f;
+}
+#menu  button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*imagenes*/
+
+.carousel-inner{
+    
+    max-height: 39rem;
+}
+
+
+/* para la pantalla pequeña*/
+
+@media (max-width: 768px){
+    #intro{
+        width: 90% !important;
+    }
+}
+
+
+/*prueba*/
+#galeria img{
+    width: 100%;
+}
+#centro{
+    width: 400px;
+    margin: 0px auto;
+}
+
+.body2{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+
+}
+
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+
+}
+#boton{
+    background: #31384A;
+    color: #fff ;
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}

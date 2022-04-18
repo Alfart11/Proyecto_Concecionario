@@ -10,6 +10,7 @@ import { ModelosComponent } from './components//modelos/modelos.component';
 import { PostVentaComponent } from './components//post-venta/post-venta.component';
 import { RepuestosComponent } from './components/repuestos/repuestos.component';
 import { AccesoriosComponent } from './components/accesorios/accesorios.component';
+import { OfertasComponent } from './components/ofertas/ofertas.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AccesoriosComponent } from './components/accesorios/accesorios.componen
     PostVentaComponent,
     RepuestosComponent,
     AccesoriosComponent,
+    OfertasComponent,
   ],
   imports: [
     BrowserModule,

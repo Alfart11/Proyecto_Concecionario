@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ModelosComponent } from './components/modelos/modelos.component';
 import { PostVentaComponent } from './components/post-venta/post-venta.component';
 import { RepuestosComponent } from './components/repuestos/repuestos.component';
+import { OfertasComponent } from './components/ofertas/ofertas.component';
 
 const routes: Routes =[
   {path:'', component: LoginComponent},
@@ -15,6 +16,7 @@ const routes: Routes =[
   {path:'postventa', component: PostVentaComponent},
   {path:'repuestos', component: RepuestosComponent},
   {path:'accesorios', component: AccesoriosComponent},
+  {path:'ofertas', component: OfertasComponent},
   {path:'**', redirectTo: '', pathMatch: 'full'},
 ]
 
