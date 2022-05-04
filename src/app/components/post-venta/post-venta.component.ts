@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Cliente_Antiguo } from 'src/app/interfaces/cliente_antiguo';
 import { Concesionario } from 'src/app/interfaces/concesionario';
 import { Vehiculo_Vendidos } from 'src/app/interfaces/vehiculos_vendidos';
+import { Servicio01Service } from 'src/app/servicios/servicios01.service';
 
 
 @Component({
@@ -10,6 +11,11 @@ import { Vehiculo_Vendidos } from 'src/app/interfaces/vehiculos_vendidos';
   styleUrls: ['./post-venta.component.css']
 })
 export class PostVentaComponent {
+  constructor(private miservicio01:Servicio01Service){
+    this.ListaCliente=this.miservicio01.ListaCliente;
+    this.ListaVehiculo=this.miservicio01.ListaVehiculo;
+    this.ListaConcesionario=this.miservicio01.ListaConcesionario;
+  }
   public ListaCliente: Cliente_Antiguo[]= [];
   public ListaVehiculo: Vehiculo_Vendidos[]= [];
   public ListaConcesionario: Concesionario[]= [];
@@ -26,13 +32,17 @@ export class PostVentaComponent {
   }
   public concesionario: Concesionario = {
     Sede: "",
+    Servicio: "",
   }
   EnviarDatos(): void {
-    this.ListaCliente.push(this.clienteAntiguo)
-    this.ListaVehiculo.push(this.vehiculoVendido)
-    this.ListaConcesionario.push(this.concesionario)
-    console.log(this.clienteAntiguo)
-    console.log(this.vehiculoVendido)
-    console.log(this.concesionario)
+    this.miservicio01.GuardarClienteAntiguoService(this.clienteAntiguo);
+    this.miservicio01.GuardarVehiculoVendidoService(this.vehiculoVendido);
+    this.miservicio01.GuardarConcesionarioService(this.concesionario);
+    // this.ListaCliente.push(this.clienteAntiguo)
+    // this.ListaVehiculo.push(this.vehiculoVendido)
+    // this.ListaConcesionario.push(this.concesionario)
+    // console.log(this.clienteAntiguo)
+    // console.log(this.vehiculoVendido)
+    // console.log(this.concesionario)
   }
 }

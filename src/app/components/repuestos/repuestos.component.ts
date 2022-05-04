@@ -1,5 +1,6 @@
 // import { Component, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Repuesto } from 'src/app/interfaces/repuesto';
 
 
@@ -53,7 +54,7 @@ public Repuesto05: Repuesto = {
 // .................................................... REPUESTO06 ......................................................//
 public Repuesto06: Repuesto = {
   nombre: "Alfombra",
-  imagen: "https://motocarpanama.com/wp-content/uploads/2021/04/1619709123_ALFOMBRAS.png",
+  imagen: "https://www.adnautos.com/web/image/15772/UCM-503B-1-1.png?access_token=d9a4c1c3-1bd9-4ca2-b64f-80f103d866f4",
   precio: "S/990"
 };
 public estadoBoton: boolean = false;

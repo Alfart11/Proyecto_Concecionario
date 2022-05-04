@@ -1,4 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { Auto } from 'src/app/interfaces/auto';
 
@@ -7,14 +6,6 @@ import { Auto } from 'src/app/interfaces/auto';
    templateUrl: './modelos.component.html',
    styleUrls: ['./modelos.component.css']
 })
-// export class ModelosComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
 
 export class ModelosComponent {
  // .................................................... AUTOS ......................................................//
@@ -65,4 +56,5 @@ onDatos(): void {
   console.log(this.Auto05);
   console.log(this.Auto06);
 }
+modelosArray: Auto[] = [this.Auto01,this.Auto02,this.Auto03,this.Auto04,this.Auto05,this.Auto06]
 }

@@ -11,6 +11,8 @@ import { PostVentaComponent } from './components//post-venta/post-venta.componen
 import { RepuestosComponent } from './components/repuestos/repuestos.component';
 import { AccesoriosComponent } from './components/accesorios/accesorios.component';
 import { OfertasComponent } from './components/ofertas/ofertas.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { Servicio01Service } from './servicios/servicios01.service';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { OfertasComponent } from './components/ofertas/ofertas.component';
     RepuestosComponent,
     AccesoriosComponent,
     OfertasComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
@@ -31,9 +34,10 @@ import { OfertasComponent } from './components/ofertas/ofertas.component';
   exports: [
     AppComponent,
     LoginComponent,
-    CotizacionComponent
+    CotizacionComponent,
+    RegistroComponent
   ],
-  providers: [],
+  providers: [Servicio01Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
