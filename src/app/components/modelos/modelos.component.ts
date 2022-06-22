@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Auto } from 'src/app/interfaces/auto';
+import { ApiModelosService } from 'src/app/servicios/api-modelos.service';
 
 @Component({
    selector: 'app-modelos',
@@ -7,7 +8,14 @@ import { Auto } from 'src/app/interfaces/auto';
    styleUrls: ['./modelos.component.css']
 })
 
-export class ModelosComponent {
+export class ModelosComponent implements OnInit {
+  // modelosArray: Auto[] = []
+
+  // constructor(
+  //   private apiModelosService: ApiModelosService
+  // ){
+  //   this.modelos = this.apiModelosService.getAutos();
+  // }
  // .................................................... AUTOS ......................................................//
 // .................................................... AUTO01 ......................................................//
   public Auto01: Auto = {
@@ -17,7 +25,7 @@ export class ModelosComponent {
     imagen: "https://www.toyotaperu.com.pe/sites/default/files/camioneta-4Runner-Toyota-4x4.png",
     precio: 23100
   };
-// .................................................... AUTO02 ......................................................//
+// // .................................................... AUTO02 ......................................................//
   public Auto02: Auto = {
     id: 2,
     nombre: "Avanza",
@@ -25,7 +33,7 @@ export class ModelosComponent {
     imagen: "https://www.toyotaperu.com.pe/sites/default/files/avanza-listado_0.png",
     precio: 82680
   };
-// .................................................... AUTO03 ......................................................//
+// // .................................................... AUTO03 ......................................................//
   public Auto03: Auto = {
     id: 3,
     nombre: "Hilux",
@@ -33,7 +41,7 @@ export class ModelosComponent {
     imagen: "https://www.toyotaperu.com.pe/sites/default/files/HILUX.png",
     precio: 160280
   };
-// .................................................... AUTO04 ......................................................//
+// // .................................................... AUTO04 ......................................................//
 public Auto04: Auto = {
   id: 4,
   nombre: "Camaro",
@@ -42,7 +50,7 @@ public Auto04: Auto = {
   precio: 230900
 
 };
-// .................................................... AUTO05 ......................................................//
+// // .................................................... AUTO05 ......................................................//
 public Auto05: Auto = {
   id: 5,
   nombre: "Lexus RX",
@@ -50,7 +58,7 @@ public Auto05: Auto = {
   imagen: "https://cdn.wheel-size.com/automobile/body/lexus-rx-2019-2021-1589785390.1972506.png",
   precio: 123960
 };
-// .................................................... AUTO06 ......................................................//
+// // .................................................... AUTO06 ......................................................//
 public Auto06: Auto = {
   id: 6,
   nombre: "Dodge",
@@ -60,13 +68,17 @@ public Auto06: Auto = {
 };
 public estadoBoton: boolean = false;
 
-onDatos(): void {
-  console.log(this.Auto01);
-  console.log(this.Auto02);
-  console.log(this.Auto03);
-  console.log(this.Auto04);
-  console.log(this.Auto05);
-  console.log(this.Auto06);
-}
+// onDatos(): void {
+//   console.log(this.Auto01);
+//   console.log(this.Auto02);
+//   console.log(this.Auto03);
+//   console.log(this.Auto04);
+//   console.log(this.Auto05);
+//   console.log(this.Auto06);
+// }
+
 modelosArray: Auto[] = [this.Auto01,this.Auto02,this.Auto03,this.Auto04,this.Auto05,this.Auto06]
+ngOnInit(): void{
+  }
+
 }

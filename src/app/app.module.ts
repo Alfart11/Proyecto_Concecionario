@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,7 @@ import { Servicio01Service } from './servicios/servicios01.service';
 import { Registro_autoComponent } from './components/registro_auto/registro_auto.component';
 import { Registro_repuestoComponent } from './components/registro_repuesto/registro_repuesto.component';
 import { Registro_accesorioComponent } from './components/registro_accesorio/registro_accesorio.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { Registro_accesorioComponent } from './components/registro_accesorio/reg
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   exports: [
     AppComponent,

@@ -39,7 +39,7 @@ public Auto03: Auto = {
 
   Agregar(): void {
     if(this.posicion == -1){
-    this.Auto.id = this.autoArray.length + 1;
+    // this.Auto.id = this.autoArray.length + 1;
     this.autoArray.push(this.Auto);
     this.Auto= this.autoVacio();
     console.log("el arreglo de Autos tiene:",this.autoArray.length,"elementos")
