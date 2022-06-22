@@ -1,5 +1,7 @@
 export interface Auto {
+    id:number;
     nombre: string,
-    imagen: string,
-    precio: string
+    marca: string,
+    precio: number,
+    imagen: string
 }

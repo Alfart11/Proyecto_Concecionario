@@ -13,6 +13,9 @@ import { AccesoriosComponent } from './components/accesorios/accesorios.componen
 import { OfertasComponent } from './components/ofertas/ofertas.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { Servicio01Service } from './servicios/servicios01.service';
+import { Registro_autoComponent } from './components/registro_auto/registro_auto.component';
+import { Registro_repuestoComponent } from './components/registro_repuesto/registro_repuesto.component';
+import { Registro_accesorioComponent } from './components/registro_accesorio/registro_accesorio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { Servicio01Service } from './servicios/servicios01.service';
     RepuestosComponent,
     AccesoriosComponent,
     OfertasComponent,
-    RegistroComponent
+    RegistroComponent,
+    Registro_autoComponent,
+    Registro_repuestoComponent,
+    Registro_accesorioComponent
   ],
   imports: [
     BrowserModule,

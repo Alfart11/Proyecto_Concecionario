@@ -1,5 +1,7 @@
 export interface Repuesto {
-    nombre: string,
-    imagen: string,
-    precio: string
+  id:number;
+  nombre: string,
+  marca: string,
+  precio: number,
+  imagen: string
 }
